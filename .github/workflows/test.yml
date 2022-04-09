@@ -29,7 +29,7 @@ jobs:
         python-version: ${{ matrix.python-version }}
 
     - name: Install xonsh shell
-      run: pip install xonsh
+      run: pip install git+https://github.com/xonsh/xonsh.git
     - name: Install xontrib
       run: pip install .
     - name: Test

@@ -137,30 +137,6 @@ optional = false
 python-versions = ">=3.6"
 
 [[package]]
-name = "xonsh"
-version = "0.11.0"
-description = "Python-powered, cross-platform, Unix-gazing shell"
-category = "main"
-optional = false
-python-versions = ">=3.7"
-develop = false
-
-[package.extras]
-full = ["prompt-toolkit (>=3.0.27)", "pyperclip", "pygments (>=2.2)", "gnureadline", "distro", "setproctitle"]
-linux = ["distro"]
-mac = ["gnureadline"]
-proctitle = ["setproctitle"]
-ptk = ["prompt-toolkit (>=3.0.27)", "pyperclip"]
-pygments = ["pygments (>=2.2)"]
-zipapp = ["importlib-resources"]
-
-[package.source]
-type = "git"
-url = "https://github.com/xonsh/xonsh/"
-reference = "main"
-resolved_reference = "b1fe9e49d4b0b51373fd8a5646b3a7dfe2c2aa46"
-
-[[package]]
 name = "zipp"
 version = "3.8.0"
 description = "Backport of pathlib-compatible object wrapper for zip files"
@@ -175,7 +151,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.7"
-content-hash = "5835d78c2fc989afe0fdf463434c6744903273f01178b54379311a5a1f4f95b5"
+content-hash = "7486b638e4e794947f5ab4fe8f3bd816f887e81e1cfab90d30f81c41ca9e1435"
 
 [metadata.files]
 atomicwrites = [
@@ -226,7 +202,6 @@ typing-extensions = [
     {file = "typing_extensions-4.1.1-py3-none-any.whl", hash = "sha256:21c85e0fe4b9a155d0799430b0ad741cdce7e359660ccbd8b530613e8df88ce2"},
     {file = "typing_extensions-4.1.1.tar.gz", hash = "sha256:1a9462dcc3347a79b1f1c0271fbe79e844580bb598bafa1ed208b94da3cdcd42"},
 ]
-xonsh = []
 zipp = [
     {file = "zipp-3.8.0-py3-none-any.whl", hash = "sha256:c4f6e5bbf48e74f7a38e7cc5b0480ff42b0ae5178957d564d18932525d5cf099"},
     {file = "zipp-3.8.0.tar.gz", hash = "sha256:56bf8aadb83c24db6c4b577e13de374ccfb67da2078beba1d037c17980bf43ad"},
