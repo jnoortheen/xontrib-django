@@ -36,7 +36,8 @@ Code = "https://github.com/jnoortheen/xontrib-django"
 
 [tool.poetry.dependencies]
 python = ">=3.7"
-xonsh = ">=0.11"
+#xonsh = ">=0.12"
+xonsh = {git = "https://github.com/xonsh/xonsh/", branch="main"}
 
 [tool.poetry.dev-dependencies]
 pytest = ">=6.0"
