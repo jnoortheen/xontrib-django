@@ -1,7 +1,7 @@
 
 [tool.poetry]
 name = "xontrib-django"
-version = "0.0.1"
+version = "0.0.2"
 description = "Django auto-completions for Xonsh shell"
 authors = ["Noortheen Raja <jnoortheen@gmail.com>"]
 
@@ -36,7 +36,7 @@ Code = "https://github.com/jnoortheen/xontrib-django"
 
 [tool.poetry.dependencies]
 python = ">=3.7"
-#xonsh = ">=0.12"
+xonsh = ">=0.12"
 
 [tool.poetry.dev-dependencies]
 pytest = ">=6.0"
