@@ -1,50 +1,14 @@
 
-[tool.poetry]
-name = "xontrib-django"
-version = "0.0.2"
-description = "Django auto-completions for Xonsh shell"
-authors = ["Noortheen Raja <jnoortheen@gmail.com>"]
-
-license = "MIT"
-readme = "README.md"
-
-repository = "https://github.com/jnoortheen/xontrib-django"
-keywords = ['xontrib', 'xonsh']
-classifiers = [
-    "Intended Audience :: Developers",
-    "License :: OSI Approved :: MIT License",
-    "Natural Language :: English",
-    "Operating System :: OS Independent",
-    "Topic :: System :: Shells",
-    "Topic :: System :: System Shells",
-    "Topic :: Terminals",
-    "Programming Language :: Python",
-    "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.6",
-    "Programming Language :: Python :: 3.7",
-    "Programming Language :: Python :: 3.8",
+[project.optional-dependencies]
+dev = [
+    "pytest>=6.0",
 ]
 
-
-packages = [{ include = "xontrib" }]
-
-[tool.poetry.urls]
-Documentation = "https://github.com/jnoortheen/xontrib-django/blob/master/README.md"
-Code = "https://github.com/jnoortheen/xontrib-django"
-"Issue tracker" = "https://github.com/jnoortheen/xontrib-django/issues"
-
-
-[tool.poetry.dependencies]
-python = ">=3.7"
-xonsh = ">=0.12"
-
-[tool.poetry.dev-dependencies]
-pytest = ">=6.0"
-
+[tool.pdm.build]
+includes = ["xontrib"]
 [build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
-
+requires = ["pdm-pep517>=1.0.0"]
+build-backend = "pdm.pep517.api"
 
 [tool.isort]
 profile = "black"
@@ -67,3 +31,27 @@ force-exclude = '''
   | disk-cache.sqlite3
 )/
 '''
+
+[project]
+# PEP 621 project metadata
+# See https://www.python.org/dev/peps/pep-0621/
+authors = [
+    {name = "Noortheen Raja", email = "jnoortheen@gmail.com"},
+]
+license = {text = "MIT"}
+requires-python = ">=3.7"
+dependencies = [
+    "xonsh>=0.12",
+]
+name = "xontrib-django"
+version = "0.0.2"
+description = "Django auto-completions for Xonsh shell"
+readme = "README.md"
+keywords = ["xontrib", "xonsh"]
+classifiers = ["Intended Audience :: Developers", "License :: OSI Approved :: MIT License", "Natural Language :: English", "Operating System :: OS Independent", "Topic :: System :: Shells", "Topic :: System :: System Shells", "Topic :: Terminals", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8"]
+
+[project.urls]
+Documentation = "https://github.com/jnoortheen/xontrib-django/blob/master/README.md"
+Code = "https://github.com/jnoortheen/xontrib-django"
+"Issue tracker" = "https://github.com/jnoortheen/xontrib-django/issues"
+repository = "https://github.com/jnoortheen/xontrib-django"
